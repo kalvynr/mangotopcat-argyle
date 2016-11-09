@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Project Argyle</title>
+  
+  <!-- third-party stylesheets -->
+  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  
+  <!-- our stylesheets -->
+  <link rel="stylesheet" type="text/css" href="css/mtc.css"/>
+  <link rel="stylesheet" type="text/css" href="css/mtc.argyle.css"/>
+  <link rel="stylesheet" type="text/css" href="css/mtc.argyle.grid.css"/>
+  
+  <style type="text/css">
+  .overlay-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter:alpha(opacity=90);
+    -moz-opacity:0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+  }
+  </style>
+  
+  <!-- third-part javascript -->
+  <script type="application/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="application/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script type="application/javascript" src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.0/backbone-min.js"></script>
+  
+  <!-- our javascript -->
+  <script type="application/javascript" src="js/mtc.js"></script>
+  <script type="application/javascript" src="js/mtc.argyle.js"></script>
+  <script type="application/javascript" src="js/mtc.argyle.fake.js"></script>
+  <script type="application/javascript" src="js/mtc.argyle.model.js"></script>
+  <script type="application/javascript" src="js/mtc.argyle.shell.js"></script>
+  <script type="application/javascript" src="js/mtc.argyle.grid.js"></script>
+  <script type="application/javascript">
+    $(function () {
+      mtc.initModule();
+      mtc.argyle.initModule( $('#argyle') );
+    });
+  </script>
+  
+</head>
+<body>
+  
+  <div id="mtc">
+    <div id="argyle">
+    </div>
+  </div>
+</body>
+</html>

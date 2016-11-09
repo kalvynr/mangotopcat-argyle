@@ -1,0 +1,56 @@
+/*
+ * mtc.argyle.grid.css
+ * Grid feature styles
+ */
+
+.mtc-argyle-grid-bootstrap-top-buffer {
+  margin-top : 5px;
+}
+
+.mtc-argyle-grid-tile {
+  position   : relative;
+  height     : 160px;
+}
+
+.mtc-argyle-grid-tile-front img,
+.mtc-argyle-grid-tile-rear img {
+  width    : 160px;
+  height   : 160px;
+}
+
+.mtc-argyle-grid-tile-front, .mtc-argyle-grid-tile-rear {
+  position   : absolute;
+  top        : 0;
+  
+  -webkit-backface-visibility   : hidden;
+  backface-visibility           : hidden;
+  -webkit-transition            : -webkit-transform 0.3s;
+  transition                    : transform 0.3s;
+}
+
+.mtc-argyle-grid-tile-front {
+  -webkit-transform   : rotateY(0);
+  transform           : rotateY(0);
+}
+
+.mtc-argyle-grid-tile-rear {
+  -webkit-transform   : rotateY(-180deg);
+  transform           : rotateY(-180deg);
+}
+
+.mtc-argyle-grid-tile.flipped .mtc-argyle-grid-tile-front {
+  -webkit-transform   : rotateY(-180deg);
+  transform           : rotateY(-180deg);
+}
+
+.mtc-argyle-grid-tile.flipped .mtc-argyle-grid-tile-rear {
+  -webkit-transform   : rotateY(0);
+  transform           : rotateY(0);
+}
+
+/* not used right now */
+.mtc-argyle-mosaic-grid-1 {
+  background-image: url();
+  background-color: #fff;
+}
+
